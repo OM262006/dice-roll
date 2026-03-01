@@ -6,7 +6,7 @@ score = 0
 
 while True:
 
-    user = input("enter S to start the game or Q to exit the game").lower().split()
+    user = input("enter S to start the game or Q to exit the game:").lower().split()
 
 
     if user == "c":
