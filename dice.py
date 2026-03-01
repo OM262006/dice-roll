@@ -1,27 +1,30 @@
 import random 
 
-print("welcome to dice roll game")
+print("Welcome to Dice Roll Game")
 
 score = 0
 
 while True:
 
-    user = input("enter S to start the game or Q to exit the game:").lower().split()
+    user = input("Enter S to start the game or Q to exit the game: ").lower().strip()
 
-
-    if user == "c":
+    if user == "s":
         dice = random.randint(1,6)
-        print("you rolled:",dice)
+        print("You rolled:", dice)
+
         if dice == 6:
-            print("you got 6 meat +1 point")
+            print("u got 6. +1 point")
             score += 1
         else:
-            print("u did not got six try once again")
+            print("u did not get 6, try again")
 
-        print("ur total score:",score)
+        print("ur total score:", score)
 
     elif user == "q":
-        print("game over")
+        print("Game over")
         print("ur total and final score:", score)
-        print("thanku for playing")
+        print("Thank u for playing")
         break
+
+    else:
+        print("Invalid input! Press S or Q only.")
